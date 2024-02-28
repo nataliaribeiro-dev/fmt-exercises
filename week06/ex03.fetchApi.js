@@ -16,7 +16,6 @@ async function fetchJson() {
   const body = document.querySelector('body');
   const pre = document.createElement('pre');
   pre.innerHTML = JSON.stringify(data, null, 2);
-  body.appendChild(pre);
 }
 
 fetchJson().catch(error => console.error(error));
