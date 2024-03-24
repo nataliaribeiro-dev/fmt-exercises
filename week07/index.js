@@ -63,3 +63,18 @@ class Person {
     this.profession = profession;
   }
 }
+
+//ex08: Crie uma nova classe chamada Cliente que deve herdar da classe Pessoa.  
+
+class Customer extends Person {
+  telephone;
+  email;
+  customerSince;
+
+  constructor(name, age, profession, telephone, email, customerSince) {
+    super(name, age, profession);
+    this.telephone = telephone;
+    this.email = email;
+    this.customerSince = customerSince;
+  }
+}
