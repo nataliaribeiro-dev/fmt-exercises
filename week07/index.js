@@ -14,4 +14,18 @@ class Product {
     this.price = price;
     this.quantity = quantity;
   }
+
+  sell(quantity_sold) {
+    if (quantity_sold > this.quantity) {
+      console.log("Não temos estoque suficiente para a venda");
+      return;
+    }
+    this.quantity -= quantity_sold;
+    console.log(`Venda de ${quantity_sold} ${this.name} realizada com sucesso!`);
+    console.log(`Estoque atual: ${this.quantity}`);
+  }
 }
+
+//let product = new Product("Camiseta", 50, 100);
+
+//product.sell(101);
