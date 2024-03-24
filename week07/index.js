@@ -39,8 +39,15 @@ class Product {
   showStock() {
     console.log(`O produto ${this.name} possui ${this.quantity} unidades disponíveis em estoque.`);
   }
+
+  //ex06: Crie um método chamado priceUpdate() que permita atualizar o preço do produto.
+
+  priceUpdate(newPrice) {
+    this.price = newPrice;
+    console.log(`O preço do produto ${this.name} foi atualizado para R$ ${this.price}.`);
+  }
 }
 
 let product = new Product("Camiseta", 50, 100);
 
-product.showStock();
+product.priceUpdate(60);
