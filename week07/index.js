@@ -33,8 +33,14 @@ class Product {
     console.log(`Reposição de ${quantity_replaced} ${this.name}s realizada com sucesso!`);
     console.log(`Estoque atual: ${this.quantity} unidades.`);
   }
+
+  //ex05: Crie um método chamado de MostrarEstoque() dentro da classe Produto.
+
+  showStock() {
+    console.log(`O produto ${this.name} possui ${this.quantity} unidades disponíveis em estoque.`);
+  }
 }
 
-//let product = new Product("Camiseta", 50, 100);
+let product = new Product("Camiseta", 50, 100);
 
-//product.replace(30);
+product.showStock();
