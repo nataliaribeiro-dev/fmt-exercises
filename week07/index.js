@@ -48,6 +48,18 @@ class Product {
   }
 }
 
-let product = new Product("Camiseta", 50, 100);
+//ex07: crie uma nova classe chamada pessoa que deve ter os atributos:
+//nome, idade e profissão. Deve também possuir o construtor para recerber
+//os valores para cada um dos parâmetros.
 
-product.priceUpdate(60);
+class Person {
+  name;
+  age;
+  profession;
+
+  constructor(name, age, profession) {
+    this.name = name;
+    this.age = age;
+    this.profession = profession;
+  }
+}
